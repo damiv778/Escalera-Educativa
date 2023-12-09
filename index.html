@@ -2,43 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escalera Educativa</title>
-    <style>
-    tr, td, th {background-color: rgb(175, 165, 185); padding: 15px;border-radius: 30px;padding-left: 58px;padding-right: 58px;
-        ;
-    }
-    
-    </style>
+    <!-- Boostrap 5.3 --><link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Mi Css --><link rel="stylesheet" href="./CSS/index.css">
+    <!-- Iconos Font Awsome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body style="background-color: rgb(231, 215, 254);">
-    <Header >
-    <Nav>
-            <table> 
-                <tr style="display: block;">
-                        <td><a href="">Inicio</a></td>
-                        <td><a href="">Matemáticas</a></td>
-                        <td><a href="">Biología</a></td>
-                        <td><a href="">Medicina</a></td>
-                        <td><a href="">Foro</a></td>
-                </tr>
-            </table>
-        </Nav>
-    </Header>
+<body>
+<header class="bg-secondary">
+    <div class="container-fluid bg-primary">
+      <div>
+          <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark">
+              <div class="container">
+                <a class="navbar-brand" href="#">Escalera Educativa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Inicio
+                        <span class="visually-hidden">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Pages/Clases.html">CLASES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Recursos</a>
+                      <div class="dropdown-menu bg-secondary">
+                        <a class="dropdown-item" href="./Pages/articulos3d.html">Artículos 3D</a>
+                        <a class="dropdown-item" href="./Pages/kits.html">Kits Didácticos</a>
+                        <a class="dropdown-item" href="./Pages/tecnicasdeestudio.html">Técnicas de Estudio</a>
+                        <a class="dropdown-item" href="./Pages/Recursos.html">Material Gratuito</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./Pages/Clases.html">Planes de Clases</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Pages/sobremi.html">Sobre MI</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 fondo" type="button"><a href="login.html">ACCEDER</a></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </div>
+    </div>
+</header>
+<main class="fondo">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Assets/banner-filamentos-impresoras-3d.jpg" class="d-block w-100" alt="..."></div>
+        <div class="carousel-item">
+          <img src="./Assets/ciencia.jpg" class="d-block w-100" alt="..."></div>
+        <div class="carousel-item">
+          <img src="./Assets/f7jhmj.jpeg" class="d-block w-100" alt="..."></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
 <hr>
+  <div class="container">
+      <h1 style="text-align: center;">En este sitio podrás encontrar:</h1>
+      <div>
+          <div class="row boxcenter">
+              <div class="col-12 col-sm-5">
+                  <ul class="list-group">
+                    <th><li class="list-group-item bg-secondary">Clases de Matemática y Física,</li></th>
+                    <li class="list-group-item bg-secondary">Clases de Introdución a la Medicina</li>
+                    <li class="list-group-item bg-secondary">Clases de Biología y Química</li>
+                    <li class="list-group-item bg-secondary">Problemas Matemáticos </li>
+                    <li class="list-group-item bg-secondary">Maquetas en 3D para tus expociciones</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+<hr>
+<h1 style="text-align: center ;">Novedades</h1>      
+<div class="container">
+  <div>
+    <div class="row align-items-center">
+        <div class="justify-content-sm-center col-12 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/config electro card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Configuración Electrónica</h5>
+                  <p class="card-text">Conoce mas sobre el modo en el que los electrones de un átomo de un elemento se distribuyen alrededor del núcleo.</p>
+                  <a href="#" class="btn btn-outline-secondary">VER MAS</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/matrices card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matrices</h5>
+                  <p class="card-text">Las matrices se utilizan para describir sistemas de ecuaciones lineales, y registrar los datos que dependen de varios parámetros. 
+                  Utilizadas principalmente en problemas matemáticos, física, cálculos lineales, etc.., además actualmente es un componente esencial en el lenguaje de programación
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary">VER MAS</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/los-gases-nobles card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tabla Periódica - Gases Nobles</h5>
+                  <p class="card-text">Tienen muchas aplicaciones importantes en industrias como iluminación, soldadura y exploración espacial.
+                    Bajo condiciones normales, son gases monoatómicos inodoros, incoloros y presentan una reactividad química muy baja. Se sitúan en el grupo 18 de la tabla periódica .</p>
+                  <a href="#" class="btn btn-outline-secondary">VER MAS</a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div> 
+</div>
+<hr>
+</main>  
 
-<main>
-<h1>Bienvenidos a Escalera Educativa</h1>
-<p>El sitio en donde podrás prepararte en las materias en las que desde hace más de 10 años enseño a chicos que estan terminando el secundario o empezando la facultad y quieren fortalecer su conocimiento en dichas áreas</p>
-<img src="./assets/escalera educativa.jpg" alt="Escalera Educativa">
-</main>
-<hr>
-    <footer>
-        <h6><a href="">Contactate</a> con nosotros a profestredaflorencia@gmail.com </h6>
-        SEGUINOS EN <br>
-        <a href=""><img src="./assets/facebook button.png" alt="Facebook"></a>
-        <a href=""><img src="./assets/youtube button.png" alt="Youtube"></a>
-        <a href=""><img src="./assets/instagram button.png" alt="Instagram"></a>
-    </footer>
+<footer class="footer">
+  <div>
+    <div class="class row align-items-center ">
+      <!-- YT --> <div class="class col-12 col-sm-1 "><a href="https://www.youtube.com/" target="_blank"><button type="button" class="btn btn-outline-light bordesredond"><i class="fa-brands fa-youtube"></i></button></div></a>
+      <!-- FB --> <div class="class col-12 col-sm-1 "><a href="https://www.facebook.com/" target="_blank"><button type="button" class="btn btn-outline-light bordesredond"><i class="fa-brands fa-facebook"></i></button></div></a>
+      <!-- IG --> <div class="class col-12 col-sm-1 "><a href="https://www.instagram.com/" target="_blank"><button type="button" class="btn btn-outline-light bordesredond "><i class="fa-brands fa-instagram"></i></button></div></a>
+      <!-- TT --> <div class="class col-12 col-sm-1 "><a href="https://www.tiktok.com/es/" target="_blank"><button type="button" class="btn btn-outline-light bordesredond"><i class="fa-brands fa-tiktok"></i></button></div></a>
+      <!-- GM --> <div class="class col-12 col-sm-1 "><a href="mailto:escaleraeducativa@gmail.com" target="_blank"><button type="button" class="btn btn-outline-light bordesredond"><i class="fa-regular fa-envelope"></i></button></div></a>
+      <!-- Parrafo --><div class="class col-12 col-sm-7 text-light"><p>Sigueme en mis demas redes sociales para acceder a distintos tipos de contenidos y publicaciones! <p>Para contactarte personalmente, escribime vía email :  <a href="mailto:escaleraeducativa@gmail.com"><i class="fa-regular fa-envelope link-light"></i></a></p></div>
+    </div>
+  </div>
+</footer>
+<hr>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
